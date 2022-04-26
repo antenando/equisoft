@@ -10,14 +10,35 @@ body {
   outline: 1px solid black;
 }
 
+header {
+  @apply flex justify-between items-center max-w-[1280px] mx-auto bg-slate-500 p-4 my-4;
+}
+
+header h1 {
+  @apply text-3xl font-extralight text-slate-700;
+}
+
 .apps-container {
-  @apply flex flex-wrap;
+  @apply max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-2;
 }
 
 .app-content {
-  @apply flex flex-col p-2 space-y-2 rounded-sm shadow-lg sm:justify-between sm:flex-row sm:space-x-2 bg-slate-400 sm:space-y-0;
+  @apply p-2 space-y-2 rounded-sm shadow-sm sm:justify-between sm:flex-row bg-slate-400;
+}
+
+.app-input-container {
+  @apply flex p-2 rounded-sm bg-slate-500 xsmax:space-x-0 space-x-2 xxs:flex-col;
 }
 
 .app-input {
-  @apply pl-2 text-right text-black bg-gray-100 border border-gray-400 rounded-md focus:border-gray-900;
+  @apply w-1/3 h-8 py-5 font-bold text-right text-black bg-gray-100 border border-gray-400 rounded-sm xsmax:w-full;
+}
+
+.app-buttons-container {
+  @apply flex flex-col justify-between space-y-2 sm:flex-row sm:space-y-0;
+}
+
+.app-button-smallest,
+.app-button-biggest {
+  @apply text-xs text-white bg-blue-600 min-w-[100px] rounded-md p-2;
 }

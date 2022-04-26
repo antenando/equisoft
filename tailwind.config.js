@@ -1,10 +1,15 @@
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts}",
+    './index.html',
+    './src/**/*.{js,ts}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xxs: { max: '320px' },
+        xsmax: { max: '639px' },
+      }
+    },
   },
   plugins: [],
 }
