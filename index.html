@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Equisoft Frontend Test</title>
   </head>
-  <body class="1debug">
-    <div id="app" class="mx-auto max-w-7xl md:mt-10 bg-gray-300 p-2">
-      <div id="container" class="space-x-2">
+  <body class="debug">
+    <div id="app" class="p-2 mx-auto bg-gray-300 max-w-7xl sm:mt-10">
+      <div
+        id="container"
+        class="flex flex-col max-w-2xl p-2 space-y-2 rounded-sm sm:justify-between sm:flex-row sm:space-x-2 bg-slate-400 sm:space-y-0"
+      >
         <input class="input" type="number" value="123" />
         <input class="input" type="number" value="123" />
         <input class="input" type="number" value="123" />
       </div>
     </div>
+
     <script type="module" src="/src/app.ts"></script>
   </body>
 </html>
