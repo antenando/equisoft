@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-700;
+  @apply font-sans;
+}
+
+.debug * {
+  outline: 1px solid black;
+}
+
+.input {
+  @apply bg-gray-100;
+  @apply border-gray-400;
+  @apply border;
+  @apply rounded-md;
+  @apply text-black;
+  @apply pl-2;
+  @apply focus:border-gray-900;
+  @apply text-right;
+}
