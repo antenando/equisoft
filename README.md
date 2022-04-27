@@ -1,1 +1,1 @@
-// by antenando
+# Equisoft's Front-end Challenge
